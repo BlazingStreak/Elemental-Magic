@@ -67,10 +67,18 @@ public class Items {
 		GameRegistry.addShapelessRecipe(new ItemStack(enchantedStick), new ItemStack(Item.stick), new ItemStack(fireShard));
 		GameRegistry.addShapelessRecipe(new ItemStack(enchantedStick), new ItemStack(Item.stick), new ItemStack(earthShard));
 		GameRegistry.addShapelessRecipe(new ItemStack(enchantedStick), new ItemStack(Item.stick), new ItemStack(airShard));
+		GameRegistry.addRecipe(new ItemStack(waterWand), new Object[]{"w  ", "/  ", "/  ", 'w', waterCrystal, '/', enchantedStick});
 		GameRegistry.addRecipe(new ItemStack(waterWand), new Object[]{" w ", " / ", " / ", 'w', waterCrystal, '/', enchantedStick});
+		GameRegistry.addRecipe(new ItemStack(waterWand), new Object[]{"  w", "  /", "  /", 'w', waterCrystal, '/', enchantedStick});
+		GameRegistry.addRecipe(new ItemStack(fireWand), new Object[]{"f  ", "/  ", "/  ", 'f', fireCrystal, '/', enchantedStick});
 		GameRegistry.addRecipe(new ItemStack(fireWand), new Object[]{" f ", " / ", " / ", 'f', fireCrystal, '/', enchantedStick});
+		GameRegistry.addRecipe(new ItemStack(fireWand), new Object[]{"  f", "  /", "  /", 'f', fireCrystal, '/', enchantedStick});
+		GameRegistry.addRecipe(new ItemStack(earthWand), new Object[]{"e  ", "/  ", "/  ", 'e', earthCrystal, '/', enchantedStick});
 		GameRegistry.addRecipe(new ItemStack(earthWand), new Object[]{" e ", " / ", " / ", 'e', earthCrystal, '/', enchantedStick});
+		GameRegistry.addRecipe(new ItemStack(earthWand), new Object[]{"  e", "  /", "  /", 'e', earthCrystal, '/', enchantedStick});
+		GameRegistry.addRecipe(new ItemStack(airWand), new Object[]{"a  ", "/  ", "/  ", 'a', airCrystal, '/', enchantedStick});
 		GameRegistry.addRecipe(new ItemStack(airWand), new Object[]{" a ", " / ", " / ", 'a', airCrystal, '/', enchantedStick});
+		GameRegistry.addRecipe(new ItemStack(airWand), new Object[]{"  a", "  /", "  /", 'a', airCrystal, '/', enchantedStick});
 	}
 	
 	public static void addNames() {

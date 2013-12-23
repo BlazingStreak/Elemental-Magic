@@ -4,6 +4,7 @@ import com.blazingstreak.elemag.lib.ItemIds;
 import com.blazingstreak.elemag.lib.Strings;
 
 import net.minecraft.block.Block;
+import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -27,6 +28,11 @@ public class Blocks {
 		GameRegistry.registerBlock(bFireShard, Strings.B_FIRE_SHARD_UNLOCALIZED_NAME);
 		GameRegistry.registerBlock(bEarthShard, Strings.B_EARTH_SHARD_UNLOCALIZED_NAME);
 		GameRegistry.registerBlock(bAirShard, Strings.B_AIR_SHARD_UNLOCALIZED_NAME);
+		
+		MinecraftForge.setBlockHarvestLevel(bWaterShard, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(bFireShard, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(bEarthShard, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(bAirShard, "pickaxe", 2);
 	}
 	
 	public static void addNames() {

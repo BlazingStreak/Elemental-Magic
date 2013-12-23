@@ -4,6 +4,10 @@ import java.util.Random;
 
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraft.world.gen.feature.WorldGenMinable;
+
+import com.blazingstreak.elemag.blocks.Blocks;
+
 import cpw.mods.fml.common.IWorldGenerator;
 
 public class WorldGenerator implements IWorldGenerator {
@@ -27,8 +31,11 @@ public class WorldGenerator implements IWorldGenerator {
 	}
 
 	private void generateSurface(World world, Random random, int i, int j) {
-		for(int k = 0; k < 10; k++) {
-			//(new WorldGenMineable(TutorialMain.myFirstBlock.blockID, 13))
+		for(int k = 0; k < 3; k++) {
+			(new WorldGenMinable(Blocks.bWaterShard.blockID, 6)).generate(world, random, i + random.nextInt(16), random.nextInt(32), j + random.nextInt(16));
+			(new WorldGenMinable(Blocks.bFireShard.blockID, 6)).generate(world, random, i + random.nextInt(16), random.nextInt(32), j + random.nextInt(16));
+			(new WorldGenMinable(Blocks.bEarthShard.blockID, 6)).generate(world, random, i + random.nextInt(16), random.nextInt(32), j + random.nextInt(16));
+			(new WorldGenMinable(Blocks.bAirShard.blockID, 6)).generate(world, random, i + random.nextInt(16), random.nextInt(32), j + random.nextInt(16));
 		}
 	}
 

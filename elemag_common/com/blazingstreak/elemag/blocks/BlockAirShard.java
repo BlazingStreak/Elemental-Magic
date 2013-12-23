@@ -19,7 +19,7 @@ public class BlockAirShard extends Block {
 	public BlockAirShard(int id) {
 		super(id, Material.iron);
 		setCreativeTab(CreativeTabs.tabBlock);
-		setHardness(2F);
+		setHardness(3F);
 		setStepSound(Block.soundStoneFootstep);
 		setUnlocalizedName(Strings.B_AIR_SHARD_UNLOCALIZED_NAME);
 	}
